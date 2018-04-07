@@ -1,0 +1,80 @@
+@import "loginVariable.less";
+@import "Mixin.less";
+
+*{
+	margin: 0;
+ 	padding: 0;
+}
+
+body{
+	background: radial-gradient(at center, @colorOne, @colorTwo);
+}
+
+.page-header{
+	height:@heightHeader;
+	.flex(row);
+	&__title{
+		text-align:center;
+	}
+	.link{
+		color: @colorLink; 
+		font-size: @fontsizeNavBar;
+	}
+}
+
+.page-form{
+	.styleForm(@widthForm,@heightForm);
+  	.flex(column);
+	&__input{
+			.flex(column);
+	}
+	&__button{
+			.flex(row);
+	}
+}
+
+.input{
+	&__text{
+		.styleInput(@widthInputs,@sizeInputs);
+	}
+}
+
+.btnLogin{
+	.styleButton(@widthButton, @colorButton,@fontsizeButton);
+}
+
+.btnRegistr{
+	.styleButton(@widthButton, @colorButton,@fontsizeButton);
+}
+
+.page-footer{
+	height: @heightFooter;
+		&__autor{
+			text-align:right;
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

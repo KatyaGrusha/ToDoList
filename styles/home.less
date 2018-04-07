@@ -1,0 +1,120 @@
+@import "homeVariable.less";
+@import "Mixin.less";
+
+*{
+	margin: 0;
+ 	padding: 0;
+}
+
+body{
+	.styleBackgroundGradient(at center, @colorOne, @colorTwo);
+}
+
+.page-header{
+	height: @heightHeader;
+	.flex(row);
+	&__hello{
+		font-size: 1.5em;
+		font-weight: bold;
+		color: #FA8072;
+	}
+	&__title{
+		text-align:center;
+	}
+	&__nav-bar{
+		.flex(column);
+		.link{
+			color: @colorLink; 
+			font-size: @fontsizeNavBar;
+		}
+	}
+}
+
+.page-form{
+	.styleForm(@widthForm, @heightForm);
+	.flex(row);
+  	&__enter-task{
+		width:50%;
+	}
+	&__buttonGroup{
+		width:50%;
+	}
+
+}
+
+.task{
+	&__text{
+		.styleInput(@widthInput,@sizeInput);
+
+	}
+}
+
+.buttonGroup{
+	.flex(row);
+	.add{
+		.styleButton(@widthButtonGroup,@colorButtonGroup, @fontsizeButtonGroup);
+	}
+	.clear{
+		.styleButton(@widthButtonGroup,@colorButtonGroup, @fontsizeButtonGroup);
+	}
+	.save{
+		.styleButton(@widthButtonGroup,@colorButtonGroup, @fontsizeButtonGroup);
+	}
+	.read{
+		.styleButton(@widthButtonGroup,@colorButtonGroup, @fontsizeButtonGroup);
+	}
+}
+
+.enter-task{
+		&__list-task{
+			margin-top: 10px;
+			cursor: pointer;
+		}
+}
+
+.list{
+	width:@widthTaskListPrint;
+	.flex(row);
+		&__task{
+			width:@widthTaskPrint;  
+			margin-left:10px;
+		}
+		&__del{
+			.styleButton(@widthButtonDel,@colorButtonDel,@fontsizeButtonDel);
+		}
+}
+.list:hover{
+	background: #786b59; 
+}
+
+.page-footer{
+	height:@heightFooter;
+		&__autor{
+			text-align:right;
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+.flex(@flex-direction){
+ 	display: flex;
+ 	flex-direction: @flex-direction; 
+ 	justify-content: space-between;
+}
+
+.styleButton(@width, @background,@fontsize){
+	width: @width; 
+	border: 1px solid rgba(0, 0, 0, 0.56);      
+	padding: 4px 12px;      
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: @background;
+	font-family:'Comic Sans MS';
+	font-size: @fontsize;
+	color:rgb(255, 255, 255);
+}
+
+.styleForm(@width,@height){
+	display:block;
+  	width:@width;
+  	height:@height;
+  	margin:50px auto;
+  	padding:10px;
+  	border-radius:15px;
+  	background-color:rgb(84, 84, 84);
+  	font-size:16px;
+  	font-family:'Comic Sans MS';
+  	color:rgb(255, 255, 255);
+}
+
+.styleInput(@width,@font-size){
+		display:block;
+		width:@width;
+		height:15px;
+  		margin-left:10px;
+  		padding:10px;
+  		border:none;
+  		border-radius:10px;
+  		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  		background-color:rgb(190, 190, 190);
+  		font-size:@font-size;
+  		color:rgb(63, 63, 63);
+}
+
+.styleBlockTasks(){
+		padding-top:10px;
+		width: 50%; 
+		margin-left:10px;
+		height:90%;
+		overflow: auto;
+}
+
+.styleBackgroundGradient(@positionColorOne, @colorOne, @colorTwo){
+	background: radial-gradient(@positionColorOne, @colorOne, @colorTwo);
+}
